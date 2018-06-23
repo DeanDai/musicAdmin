@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>音乐详情</title>
+</head>
+<body>
+    <h1>{{ song.title }}</h1>
+    <br>
+    <h3>{{ song.artist }}</h3>
+    <br>
+    <a href="{% url 'music:song_edit' song.id %}">修改音乐</a>
+</body>
+</html>
